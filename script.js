@@ -2,7 +2,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const projects = [
         'Change Color',
         'Counter',
-        'Carrusel'
+        'Carrusel',
+        'NavBar'
         // Añade más carpetas de proyecto aquí
     ];
 
