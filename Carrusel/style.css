@@ -30,7 +30,7 @@ hr{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    width: 40rem;
+    width: 40%;
     box-shadow: 6px 6px 26px -2px rgba(0,0,0,0.33);
     padding: 30px;
     border-radius: 30px;
@@ -53,7 +53,7 @@ img{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-
+    height: 130px;
 }
 .info h1{
     font-size: 18px;
@@ -76,6 +76,7 @@ p{
 }
 .arrow{
     width: 500px;
+    height: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -84,8 +85,10 @@ i{
     color: #D8A0D9;
     font-size: 40px;
     margin: 10px 20px;
-
-
+    cursor: pointer;
+}
+i:hover{
+    font-size: 45px;
 }
 button{
     border: none;
@@ -102,4 +105,8 @@ button{
     font-weight: 450;
     color: #593257;
     margin-top: 10px;
+    cursor: pointer;
  }
+.btn:hover{
+    font-size: 15px;
+}

@@ -50,6 +50,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
 document.getElementById("adelante").addEventListener("click", function () {
   startItem = startItem + 1;
+  if(startItem >= review.length){
+    startItem = 0;
+  }
   const item = review[startItem];
   img.src = item.img;
   author.textContent = item.name;
@@ -59,9 +62,23 @@ document.getElementById("adelante").addEventListener("click", function () {
 
 document.getElementById("atras").addEventListener("click", function () {
   startItem = startItem - 1;
+  if(startItem < 0){
+    startItem = review.length - 1;
+  }
   const item = review[startItem];
   img.src = item.img;
   author.textContent = item.name;
   job.textContent = item.job;
   info.textContent = item.text;
 });
+
+
+random.addEventListener("click", function () {
+  startItem = Math.floor(Math.random() * review.length);
+  const item = review[startItem];
+  img.src = item.img;
+  author.textContent = item.name;
+  job.textContent = item.job;
+  info.textContent = item.text;
+});
+
