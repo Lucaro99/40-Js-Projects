@@ -3,7 +3,8 @@ document.addEventListener('DOMContentLoaded', () => {
         'Change Color',
         'Counter',
         'Carrusel',
-        'NavBar'
+        'NavBar',
+        'SideBar'
         // Añade más carpetas de proyecto aquí
     ];
 
