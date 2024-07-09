@@ -49,7 +49,8 @@ main {
 }
 .openModal:hover {
   background-color: #d8a0d9;
-  color: #593257;
+  transition: all 0.5s ease-in-out;
+
 }
 .modal {
   position: absolute;
@@ -85,8 +86,8 @@ main {
 }
 .modal-close {
   position: absolute;
-  right: 30px;
-  top: 20px;
+  right: 10px;
+  top: 10px;
   border: none;
   background: none;
   color: #593257;
@@ -103,6 +104,6 @@ main {
 
 @media screen and (max-width: 500px) {
     .modal-sms {
-        width: 80%;
+        width: 60%;
       }
 }
