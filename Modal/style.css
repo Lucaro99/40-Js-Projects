@@ -60,7 +60,7 @@ main {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(255, 255, 255, 0.2);
 }
 .show-modal{
     display: flex;
@@ -105,5 +105,8 @@ main {
 @media screen and (max-width: 500px) {
     .modal-sms {
         width: 60%;
+      }
+      .title-modal {
+        font-size: 20px;
       }
 }
