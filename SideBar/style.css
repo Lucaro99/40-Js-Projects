@@ -5,6 +5,9 @@
   box-sizing: border-box;
   font-family: "Lato", sans-serif;
 }
+main{
+  height: 100vh;
+}
 .nav-burger {
   position: fixed;
   right: 30px;
@@ -44,7 +47,7 @@
   flex-direction: column;
   display: flex;
   justify-content: space-between;
-  height: 100vh;
+  height: 100%;
   width: 400px;
   box-shadow: 6px 6px 26px -2px rgba(0, 0, 0, 0.33);
   background-color: aliceblue;
