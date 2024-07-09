@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,900;1,700;1,900&display=swap");
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+  font-size: 21px;
+  font-style: italic;
+}
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
+  width: 100vw;
+  background-color: aliceblue;
+}
+.title {
+  color: #BF2A70;
+  margin-bottom: 20px;
+}
+.title h1{
+  font-size: 40px;
+  font-style: normal;
+  font-size: 40px;
+  letter-spacing: 5px;
+  font-weight: 700;
+}
+.preguntas{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 50%;
+}
+.pregunta-1{
+  position: relative;
+  width: 100%;
+  margin: 10px 20px;
+  box-shadow: 0px 0px 19px -3px rgba(0,0,0,0.3);
+  border-radius: 10px;
+  background-color: white;
+}
+.answer{
+  width: 100%;
+  display: none;
+  
+}
+.show-answer{
+  display: block;
+  height: auto;
+  transition: all 0.5s ease-in-out;
+}
+.pregunta-1 button{
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #BF2A70;
+  background: none;
+  right: 10px;
+  top: 10px;
+  width: 20px;
+  height: 20px;
+}
+.preguntas button i:hover{
+  transform: rotate(180deg);
+  transition: transform 0.5s ease;
+}
+
+.preguntas button i{
+  transition: transform 0.5s ease;
+}
+
+.pregunta-1 button a{
+  text-decoration: none;
+}
+.pregunta-1 button i{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #BF2A70;
+  font-size: 15px;
+}
+.pregunta{
+  display: flex;
+  margin: 10px 20px;
+  align-items: center;
+  font-style: normal;
+  font-size: 15px;
+  letter-spacing: 1px;
+  font-weight: 700; 
+  height: 30px;
+}
+.pregunta-1 hr{
+  margin: 0 20px;
+
+}
+.respuesta p{
+  margin: 10px 20px;
+  font-style: normal;
+  font-size: 15px;
+  letter-spacing: 1px;
+  font-weight: 500;
+}
+
+.btn-back {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  width: 40px;
+  border: 1px solid black;
+  background-color: white;
+  color: #593257;
+  border-radius: 5px;
+  font-size: 10px;
+}
+.btn-back a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+}
+.btn-back i {
+  padding: 0;
+  margin: 0;
+}

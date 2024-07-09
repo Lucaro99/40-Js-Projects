@@ -5,7 +5,8 @@ document.addEventListener('DOMContentLoaded', () => {
         'Carrusel',
         'NavBar',
         'SideBar',
-        'Modal'
+        'Modal',
+        'Questions'
         // Añade más carpetas de proyecto aquí
     ];
 
