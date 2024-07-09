@@ -4,7 +4,8 @@ document.addEventListener('DOMContentLoaded', () => {
         'Counter',
         'Carrusel',
         'NavBar',
-        'SideBar'
+        'SideBar',
+        'Modal'
         // Añade más carpetas de proyecto aquí
     ];
 

@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,900;1,700;1,900&display=swap");
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Lato", sans-serif;
+}
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+  background-color: white;
+  background-image: url("/Modal/img/111357.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.modal-main {
+  height: 300px;
+  width: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.title {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  color: #d8a0d9;
+  margin-bottom: 20px;
+  text-align: center ;
+}
+.title h1 {
+  font-size: 60px;
+}
+.openModal {
+  padding: 10px;
+  border: 1px solid #593257;
+  color: #593257;
+  background-color: white;
+  border-radius: 5px;
+  font-style: normal;
+  font-size: 15px;
+  letter-spacing: 3px;
+  font-weight: 450;
+  cursor: pointer;
+}
+.openModal:hover {
+  background-color: #d8a0d9;
+  color: #593257;
+}
+.modal {
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.show-modal{
+    display: flex;
+}
+.modal-sms {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 40%;
+  width: 50%;
+  background-color: #d8a0d9;
+  border-radius: 8px;
+}
+.title-modal {
+  color: #593257;
+  font-size: 25px;
+  font-style: normal;
+  letter-spacing: 3px;
+  font-weight: 100;
+  text-align: center ;
+}
+.modal-close {
+  position: absolute;
+  right: 30px;
+  top: 20px;
+  border: none;
+  background: none;
+  color: #593257;
+  cursor: pointer;
+  font-size: 30px;
+
+}
+.modal-close i {
+  transition: transform 0.5s ease-in;
+}
+.modal-close i:hover {
+  transform: scale(1.5);
+}
+
+@media screen and (max-width: 500px) {
+    .modal-sms {
+        width: 80%;
+      }
+}
