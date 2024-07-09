@@ -101,6 +101,31 @@ main {
 .modal-close i:hover {
   transform: scale(1.5);
 }
+.btn-back{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  width: 40px;
+  border: 1px solid black;
+  background-color: white;
+  color: #593257;
+  border-radius: 5px;
+  font-size: 21px;
+}
+.btn-back a{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+}
+.btn-back i{
+  padding: 0;
+  margin: 0;
+}
+
 
 @media screen and (max-width: 500px) {
     .modal-sms {

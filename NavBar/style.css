@@ -37,7 +37,7 @@ i {
 ul {
   list-style: none;
 }
-a {
+.links a {
   text-decoration: none;
   font-style: normal;
   font-size: 15px;
@@ -46,11 +46,47 @@ a {
   color: #593257;
   margin: 0 10px;
 }
+.iconos-redes  a {
+  text-decoration: none;
+  font-style: normal;
+  font-size: 15px;
+  letter-spacing: 1px;
+  font-weight: 450;
+  color: #593257;
+  margin: 0 10px;
+}
+
 .links,
-.iconos-redes {
+.iconos-redes  {
   display: flex;
   align-items: start;
 }
+.btn-back{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  width: 40px;
+  border: 1px solid black;
+  background-color: white;
+  color: #593257;
+  border-radius: 5px;
+  font-size: 21px;
+}
+.btn-back a{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+}
+.btn-back i{
+  padding: 0;
+  margin: 0;
+}
+
+
 @media screen and (max-width: 700px) {
   .nav-center {
     flex-direction: column;
