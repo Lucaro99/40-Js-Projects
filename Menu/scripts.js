@@ -1,55 +1,107 @@
-const icon1 = document.getElementById("icon-1");
-const icon2 = document.getElementById("icon-2");
-const icon3 = document.getElementById("icon-3");
-document.getElementById("btn-open-1").addEventListener("click", () => {
-  if (icon1.classList.contains("fa-plus")) {
-    document.getElementById("answer-1").classList.add("show-answer");
-    document.getElementById("answer-2").classList.remove("show-answer");
-    document.getElementById("answer-3").classList.remove("show-answer");
-    icon1.classList.remove("fa-plus");
-    icon1.classList.add("fa-minus");
-    icon2.classList.remove("fa-minus");
-    icon2.classList.add("fa-plus");
-    icon3.classList.remove("fa-minus");
-    icon3.classList.add("fa-plus");
-  } else {
-    icon1.classList.remove("fa-minus");
-    icon1.classList.add("fa-plus");
-    document.getElementById("answer-1").classList.remove("show-answer");
-  }
-});
-document.getElementById("btn-open-2").addEventListener("click", () => {
-  if (icon2.classList.contains("fa-plus")) {
-    document.getElementById("answer-2").classList.add("show-answer");
-    document.getElementById("answer-1").classList.remove("show-answer");
-    document.getElementById("answer-3").classList.remove("show-answer");
-    icon2.classList.remove("fa-plus");
-    icon2.classList.add("fa-minus");
-    icon1.classList.remove("fa-minus");
-    icon1.classList.add("fa-plus");
-    icon3.classList.remove("fa-minus");
-    icon3.classList.add("fa-plus");
-  } else {
-    icon2.classList.remove("fa-minus");
-    icon2.classList.add("fa-plus");
+const menu = [
+  {
+    id: 1,
+    title: "buttermilk pancakes",
+    category: "breakfast",
+    price: 15.99,
+    img: "https://vanilla-js-basic-project-8-menu.netlify.app/images/item-1.jpeg",
+    desc: `I'm baby woke mlkshk wolf bitters live-edge blue bottle, hammock freegan copper mug whatever cold-pressed `,
+  },
+  {
+    id: 2,
+    title: "diner double",
+    category: "lunch",
+    price: 13.99,
+    img: "https://vanilla-js-basic-project-8-menu.netlify.app/images/item-2.jpeg",
+    desc: `vaporware iPhone mumblecore selvage raw denim slow-carb leggings gochujang helvetica man braid jianbing. Marfa thundercats `,
+  },
+  {
+    id: 3,
+    title: "godzilla milkshake",
+    category: "shakes",
+    price: 6.99,
+    img: "https://vanilla-js-basic-project-8-menu.netlify.app/images/item-3.jpeg",
+    desc: `ombucha chillwave fanny pack 3 wolf moon street art photo booth before they sold out organic viral.`,
+  },
+  {
+    id: 4,
+    title: "country delight",
+    category: "breakfast",
+    price: 20.99,
+    img: "https://vanilla-js-basic-project-8-menu.netlify.app/images/item-4.jpeg",
+    desc: `Shabby chic keffiyeh neutra snackwave pork belly shoreditch. Prism austin mlkshk truffaut, `,
+  },
+  {
+    id: 5,
+    title: "egg attack",
+    category: "lunch",
+    price: 22.99,
+    img: "https://vanilla-js-basic-project-8-menu.netlify.app/images/item-5.jpeg",
+    desc: `franzen vegan pabst bicycle rights kickstarter pinterest meditation farm-to-table 90's pop-up `,
+  },
+  {
+    id: 6,
+    title: "oreo dream",
+    category: "shakes",
+    price: 18.99,
+    img: "https://vanilla-js-basic-project-8-menu.netlify.app/images/item-6.jpeg",
+    desc: `Portland chicharrones ethical edison bulb, palo santo craft beer chia heirloom iPhone everyday`,
+  },
+  {
+    id: 7,
+    title: "bacon overflow",
+    category: "breakfast",
+    price: 8.99,
+    img: "https://vanilla-js-basic-project-8-menu.netlify.app/images/item-7.jpeg",
+    desc: `carry jianbing normcore freegan. Viral single-origin coffee live-edge, pork belly cloud bread iceland put a bird `,
+  },
+  {
+    id: 8,
+    title: "american classic",
+    category: "lunch",
+    price: 12.99,
+    img: "https://vanilla-js-basic-project-8-menu.netlify.app/images/item-8.jpeg",
+    desc: `on it tumblr kickstarter thundercats migas everyday carry squid palo santo leggings. Food truck truffaut  `,
+  },
+  {
+    id: 9,
+    title: "quarantine buddy",
+    category: "shakes",
+    price: 16.99,
+    img: "https://vanilla-js-basic-project-8-menu.netlify.app/images/item-9.jpeg",
+    desc: `skateboard fam synth authentic semiotics. Live-edge lyft af, edison bulb yuccie crucifix microdosing.`,
+  },
+  {
+    id: 10,
+    title: "Steak Dinner",
+    category: "Dinner",
+    price: 39.99,
+    img: "https://vanilla-js-basic-project-8-menu.netlify.app/images/item-10.jpeg",
+    desc: `skateboard fam synth authentic semiotics. Live-edge lyft af, edison bulb yuccie crucifix microdosing.`,
+  },
+]
 
-    document.getElementById("answer-2").classList.remove("show-answer");
-  }
-});
-document.getElementById("btn-open-3").addEventListener("click", () => {
-  if (icon3.classList.contains("fa-plus")) {
-    document.getElementById("answer-3").classList.add("show-answer");
-    document.getElementById("answer-2").classList.remove("show-answer");
-    document.getElementById("answer-1").classList.remove("show-answer");
-    icon3.classList.remove("fa-plus");
-    icon3.classList.add("fa-minus");
-    icon1.classList.remove("fa-minus");
-    icon1.classList.add("fa-plus");
-    icon2.classList.remove("fa-minus");
-    icon2.classList.add("fa-plus");
-  } else {
-    icon3.classList.remove("fa-minus");
-    icon3.classList.add("fa-plus");
-    document.getElementById("answer-3").classList.remove("show-answer");
-  }
+window.addEventListener("DOMContentLoaded", ()=>{
+  let displayMenu = menu.map(function(item){
+    return `<div class="item">
+          <div class="imagen">
+            <img
+              src="${item.img}"
+              alt="${item.img}"
+              class="comida"
+            />
+          </div>
+          <div class="comida">
+            <div class="nombre-comida">
+              <h3>${item.title}</h3>
+              <h3 class="precio">$ ${item.price}</h3>
+            </div>
+            <hr />
+            <p>${item.desc}</p>
+          </div>
+        </div>`;
+  });
+  displayMenu = displayMenu.join("");
+  document.getElementById('items-menu').innerHTML = displayMenu;
+
 });
