@@ -130,6 +130,12 @@ header{
   }
 }
 
+@media screen and (max-width: 455px){
+  .items-menu{
+    width: 90%;
+  }
+}
+
 
 /* BTN BACK */
 .btn-back {
