@@ -1,0 +1,158 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,900;1,700;1,900&display=swap");
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+  font-size: 21px;
+  font-style: italic;
+}
+main {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+  background-color: aliceblue;
+}
+header{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.title {
+  margin: 30px 0 20px 0;
+}
+.title h1 {
+  color: #3b3c40;
+  font-size: 40px;
+  font-style: normal;
+  font-size: 40px;
+  letter-spacing: 5px;
+  font-weight: 700;
+}
+.title hr {
+  background-color: #a67a46;
+  height: 5px;
+}
+.btn-filtro{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap ;
+  margin: 0 0 30px 0;
+}
+.btn-filtro button {
+  margin: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  border: 2px solid #a67a46;
+  background: white;
+  transition: background-color 0.3s, color 0.3s;
+  font-style: normal;
+  letter-spacing: 3px;
+  font-weight: 450;
+  font-size: 15px;
+  color: #a67a46;
+  text-decoration: none;
+  }
+
+.btn-filtro button:hover {
+  background-color: #a67a46;
+  color: #fff;
+  transition: all 0.3s, color 0.3s;
+}
+.items-menu{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  gap: 10px;
+  width: 80%;
+  height: auto;
+}
+.item{
+  display: flex;
+  width: 100%;
+
+}
+.imagen{
+  height: 150px;
+}
+
+.imagen img {
+  height: 100%;
+  border:4px solid #a67a46;
+  border-radius: 10px;
+  margin: 0;
+  aspect-ratio: 14/9;
+}
+.nombre-comida{
+  display: flex;
+  justify-content: space-between;
+}
+.comida{
+  margin: 10px;
+}
+
+.comida h3{
+  color: #3b3c40;
+  letter-spacing: 3px;
+  font-size: 18px;
+}
+.comida .precio{
+  color: #a67a46;
+}
+.comida p{
+  color: #3b3c40;
+  font-size: 15px;
+  font-style: normal;
+  margin-top: 10px;
+}
+@media screen and (max-width: 1290px){
+  .items-menu{
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 900px){
+  .item{
+   flex-direction: column;
+  }
+ 
+  .imagen img {
+    width: 100%;
+  object-fit: cover;
+  }
+}
+
+
+/* BTN BACK */
+.btn-back {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  width: 40px;
+  border: 1px solid black;
+  background-color: white;
+  color: #593257;
+  border-radius: 5px;
+  font-size: 10px;
+}
+.btn-back a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+}
+.btn-back i {
+  padding: 0;
+  margin: 0;
+}

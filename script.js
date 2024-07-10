@@ -6,7 +6,8 @@ document.addEventListener('DOMContentLoaded', () => {
         'NavBar',
         'SideBar',
         'Modal',
-        'Questions'
+        'Questions',
+        'Menu'
         // Añade más carpetas de proyecto aquí
     ];
 
