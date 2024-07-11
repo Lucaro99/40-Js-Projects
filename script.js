@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const projectListElement = document.getElementById('projectList');
 
-    projects.forEach(project => {
+    projects.forEach((project) => {
         const projectElement = document.createElement('a');
         projectElement.href = `./${project}/index.html`;
         projectElement.textContent = project;
