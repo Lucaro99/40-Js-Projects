@@ -7,7 +7,8 @@ document.addEventListener('DOMContentLoaded', () => {
         'SideBar',
         'Modal',
         'Questions',
-        'Menu'
+        'Menu',
+        'VideoProject'
         // Añade más carpetas de proyecto aquí
     ];
 

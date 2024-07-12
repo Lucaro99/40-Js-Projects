@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,900;1,700;1,900&display=swap");
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+  font-size: 21px;
+}
+header{
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+  height: 100vh;
+  width: 100vw;
+}
+video{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  opacity: 0.5;
+  
+}
+.title{
+  position: absolute;
+  z-index: 3;
+  font-size: 60px;
+  color: white;
+  letter-spacing: 20px;
+}
+.change{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  bottom: 200px;
+  position: absolute;
+  z-index: 3;
+  border-radius: 100px;
+  font-size: 21px;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  width: 100px;
+  border:none;
+  background-color: white;
+  cursor: pointer;
+}
+.change:hover{
+  background-color: black;
+  color: white;
+  transition: all 0.5s ease-in;
+}
+ .play-pause{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+ }
+ .play-pause{
+  color:rgb(69, 199, 216) ;
+ }
+.swipe{
+  position: absolute;
+  content: "";
+  height: 100%;
+  width: 50%;
+  border-radius: 100px;
+  right:  0%;
+  left: 50%;
+  bottom: 0%;
+  background-color: rgb(69, 199, 216);
+  transition: all .4s linear;
+
+}
+.swipe_pause {
+  position: absolute;
+  content: "";
+  height: 100%;
+  width: 50%;
+  border-radius: 100px;
+  right:  50%;
+  left: 0%;
+  bottom: 0%;
+  background-color: rgb(69, 199, 216);
+  transition: all .4s linear;
+}
+
+
+
+.btn-back{
+  position: fixed;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  width: 40px;
+  border: 1px solid black;
+  background-color: white;
+  color: #593257;
+  border-radius: 5px;
+  font-size: 21px;
+}
+.btn-back a{
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+}
+.btn-back i{
+  padding: 0;
+  margin: 0;
+}
+
+
+@media screen and (max-width: 500px) {
+ 
+  .nav-center {
+    width: 100vw;
+  }
+}

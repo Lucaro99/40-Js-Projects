@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Video</title>
+    <link rel="stylesheet" href="/VideoProject/style.css" />
+  </head>
+  <body>
+    <header>
+      <video id="video" muted autoplay loop>
+        <source src="/VideoProject/asset/video.mp4" />
+      </video>
+      <h1 class="title">VIDEO</h1>
+     
+        <button class="change" id="Change">
+          <span class="play-pause" id="play"><i class="fa-solid fa-play"></i></span>
+          <span class="play-pause" id="pause"><i class="fa-solid fa-pause"></i></span>
+          <span class="swipe" id="swipe"></span>
+      </button>
+
+  </header>
+
+
+    <div class="back">
+      <button
+        class="btn-back"
+        style="position: absolute; left: 20px; bottom: 20px"
+      >
+        <a href="/index.html">
+          <i class="fa-solid fa-arrow-left"></i>
+        </a>
+      </button>
+    </div>
+
+    <script src="/VideoProject/scripts.js"></script>
+    <script
+      src="https://kit.fontawesome.com/bf672f56cc.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
