@@ -1,0 +1,170 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,900;1,700;1,900&display=swap");
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+  overflow-x: hidden;
+}
+main {
+  height: 100vh;
+  width: 100vw;
+  background: linear-gradient(rgba(63, 208, 212, 0.5), rgba(0, 0, 0, 0.7)),
+    url("/ScrollProject/img/Fondo.jpg") center / cover no-repeat;
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+nav {
+  height: 80px;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 30px;
+  position: fixed;
+  z-index: 100;
+  transition: background-color .5s ease-in-out
+}
+.nav-black {
+  background-color: #ffffff;
+  transition: background-color .5s ease-in-out
+}
+
+nav .logo {
+  height: 60px;
+  cursor: pointer;
+}
+.logo img {
+  height: 50px;
+  width: auto;
+  content: url('/ScrollProject/img/Logo_2.png');
+}
+.links {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 30%;
+}
+.nav .links a {
+  font-weight: 500;
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  letter-spacing: 2px;
+}
+
+.nav-black .links  a {
+  font-weight: 500;
+  text-decoration: none;
+  color: #593257;
+  font-size: 20px;
+  letter-spacing: 2px;
+}
+
+.nav-black .logo img{
+  height: 50px;
+  width: auto;
+  content: url('/ScrollProject/img/logo.png');
+}
+
+.info-main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  width: 60%;
+  color: white;
+}
+.info-main h1 {
+  font-size: 60px;
+  letter-spacing: 8px;
+  margin: 10px;
+}
+.info-main p {
+  font-size: 18px;
+  margin: 10px;
+}
+.info-main button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid white;
+  background-color: transparent;
+  color: white;
+  font-size: 18px;
+  padding: 5px 10px;
+  font-weight: 350;
+  margin-top: 20px;
+  transition: all 0.4s ease-in-out;
+  cursor: pointer;
+}
+.info-main button:hover {
+  background-color: white;
+  color: #593257;
+  transition: all 0.4s ease-in-out;
+}
+section {
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  background-color: rgb(229, 225, 248);
+  color: #593257;
+  width: 1 0vw;
+  height: 70vh;
+}
+section h2 {
+  font-size: 40px;
+  letter-spacing: 8px;
+  margin: 10px;
+}
+section h2 span {
+  color: #b866b4;
+}
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #593257;
+  color: white;
+  width: 100vw;
+  height: 15vh;
+}
+footer a {
+  text-decoration: none;
+  color: white;
+}
+
+/* Botón Back */
+
+.btn-back {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  width: 40px;
+  border: 1px solid black;
+  background-color: white;
+  color: #593257;
+  border-radius: 5px;
+  font-size: 21px;
+}
+.btn-back a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+}
+.btn-back i {
+  padding: 0;
+  margin: 0;
+}

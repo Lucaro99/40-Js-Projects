@@ -8,7 +8,8 @@ document.addEventListener('DOMContentLoaded', () => {
         'Modal',
         'Questions',
         'Menu',
-        'VideoProject'
+        'VideoProject',
+        'ScrollProject'
         // Añade más carpetas de proyecto aquí
     ];
 
