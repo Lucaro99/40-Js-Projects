@@ -7,16 +7,13 @@ window.addEventListener("scroll", () => {
   }
 });
 
-
-// scripts.js
-
 // Esta línea asegura que el código dentro de la función se ejecute después de que todo el contenido del DOM se haya cargado.
 document.addEventListener('DOMContentLoaded', () => {
   // Obtiene una referencia al elemento del navbar.
-  const navbar = document.querySelector('.nav');
   
-  // Calcula la altura del navbar y la guarda en la variable navbarHeight.
+  const navbar = document.querySelector('.nav');
   const navbarHeight = navbar.offsetHeight;
+  // Calcula la altura del navbar y la guarda en la variable navbarHeight.
 
   // Selecciona todos los enlaces dentro del navbar que tienen la clase 'nav a'.
   document.querySelectorAll('.nav a').forEach(pepito => {
@@ -41,6 +38,18 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 });
+
+
+document.getElementById("descubre").addEventListener('click', ()=>{
+  const navbar = document.querySelector('.nav');
+  const navbarHeight = navbar.offsetHeight;
+  window.scrollTo({
+    top: document.getElementById("tours").offsetTop - navbarHeight,
+    behavior: 'smooth'
+  });
+})
+
+
 document.getElementById("nav-toggle").addEventListener('click', ()=>{
   document.getElementById('links').classList.toggle('hide-toggle');
   const icon = document.getElementById('icon');
