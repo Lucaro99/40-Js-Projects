@@ -9,7 +9,8 @@ document.addEventListener('DOMContentLoaded', () => {
         'Questions',
         'Menu',
         'VideoProject',
-        'ScrollProject'
+        'ScrollProject',
+        'Tabs'
         // Añade más carpetas de proyecto aquí
     ];
 
