@@ -28,28 +28,43 @@ nav {
   padding: 0 30px;
   position: fixed;
   z-index: 100;
-  transition: background-color .5s ease-in-out
+  transition: background-color 0.5s ease-in-out;
 }
 .nav-black {
   background-color: #ffffff;
-  transition: background-color .5s ease-in-out
+  transition: background-color 0.5s ease-in-out;
 }
 
 nav .logo {
   height: 60px;
   cursor: pointer;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
+
 .logo img {
-  height: 50px;
-  width: auto;
-  content: url('/ScrollProject/img/Logo_2.png');
+  display: block;
+  height: 100%;
+  content: url("/ScrollProject/img/Logo_2.svg");
+}
+.nav-toggle {
+  border: none;
+  background: none;
+  color: white;
+  font-weight: 450;
+  font-size: 30px;
+  justify-content: space-between;
+  display: none;
 }
 .links {
   list-style: none;
   display: flex;
   align-items: center;
   justify-content: space-around;
-  width: 30%;
+  width: 100%;
+  height: 100%;
 }
 .nav .links a {
   font-weight: 500;
@@ -59,7 +74,7 @@ nav .logo {
   letter-spacing: 2px;
 }
 
-.nav-black .links  a {
+.nav-black .links a {
   font-weight: 500;
   text-decoration: none;
   color: #593257;
@@ -67,10 +82,10 @@ nav .logo {
   letter-spacing: 2px;
 }
 
-.nav-black .logo img{
-  height: 50px;
-  width: auto;
-  content: url('/ScrollProject/img/logo.png');
+.nav-black .logo img {
+  display: block;
+  height: 100%;
+  content: url("/ScrollProject/img/Logo.svg");
 }
 
 .info-main {
@@ -139,6 +154,63 @@ footer {
 footer a {
   text-decoration: none;
   color: white;
+}
+
+/* MediaQuery */
+@media screen and (max-width: 700px) {
+  .nav {
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: start;
+    height: auto;
+  }
+  .logo {
+    width: 100vw;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .nav-toggle {
+    display: contents;
+    margin-right: 10px;
+  }
+  .nav-toggle i {
+    transition: transform 0.5s ease-in;
+  }
+  .nav-toggle i:hover {
+    color: #d8a0d9;
+    transform: rotate(90deg);
+    transition: transform 0.5s ease-in;
+  }
+  .links {
+    flex-direction: column;
+    margin: 0px 10px;
+    height: 0;
+    overflow: hidden;
+    transition: height 0.3s linear;
+  }
+  .links li {
+    width: 100%;
+    height: auto;
+    display: flex;
+  }
+  .links li a {
+    display: flex;
+    height: 35px;
+    align-items: center;
+  }
+  .links li:hover {
+    background-color: #d8a0d9;
+    font-size: 18px;
+  }
+  .hide-toggle {
+    flex-direction: column;
+    width: 97vw;
+    height: 140px;
+    justify-content: space-around;
+    overflow: hidden;
+    transition: height 0.3s linear;
+  }
 }
 
 /* Botón Back */
