@@ -160,14 +160,12 @@ footer a {
 /* MediaQuery */
 @media screen and (max-width: 700px) {
 
-
   .nav  {
     position: static;
   }
   .nav .links a, .nav-black .links a {
     color: #593257;
   }
-  
   nav .logo img, .nav-black .logo img  {
     content: url("/ScrollProject/img/Logo.svg");
     height: 50px
