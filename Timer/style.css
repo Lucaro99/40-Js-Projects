@@ -11,11 +11,10 @@ main {
   display: flex;
   align-items: center;
   justify-content: start;
-  flex-direction: column;
   text-align: center;
   background-color: aliceblue;
 }
-section {
+section .descripcion {
   display: flex;
   align-items: center;
   justify-content: center;
