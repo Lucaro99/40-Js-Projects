@@ -15,14 +15,6 @@ main {
   text-align: center;
   background-color: aliceblue;
 }
-.title {
-  margin: 50px;
-  font-size: 20px;
-  color: #593257;
-}
-.title h1 {
-  letter-spacing: 3px;
-}
 section {
   display: flex;
   align-items: center;
@@ -31,17 +23,29 @@ section {
   width: 80%;
   height: 60%;
 }
+.title {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  flex-direction: column;
+  margin: 50px 0 0 20px;
+  font-size: 20px;
+  color: #593257;
+}
+.title h1 {
+  letter-spacing: 3px;
+}
 .imagen {
-  width: 400px;
+  width: 500px;
   aspect-ratio: 1/.5;
 }
 .imagen img {
-  width: 400px;
+  width: 500px;
   border-radius: 20px;
 }
 .tabs {
-  width: 400px;
-  aspect-ratio: 1/.5;
+  width: 500px;
+  aspect-ratio: 1/.7;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -93,6 +97,7 @@ section {
   border-bottom-right-radius: 20px;
   border-bottom-left-radius: 20px;
   width: 100%;
+  aspect-ratio: 1/.6;
   height: auto;
 }
 .info-active {
