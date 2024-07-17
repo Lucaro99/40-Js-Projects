@@ -103,7 +103,7 @@ main {
     width: 90%;
   }
 }
-@media screen and (max-width: 410px) {
+@media screen and (max-width: 492px) {
   main{
     height: auto;
   }
