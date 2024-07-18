@@ -130,9 +130,7 @@ main {
 
 /* Botón Back */
 
-
 .btn-back {
-  position: fixed;
   display: flex;
   align-items: center;
   justify-content: center;
