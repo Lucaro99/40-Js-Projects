@@ -63,10 +63,11 @@ main {
   align-items: center;
   justify-content: center;
   text-align: center;
+  flex-direction: column;
  
   p {
     width: 60%;
-    font-size: 18px;
+    font-size: 15px;
     letter-spacing: 3px;
     word-spacing: 2px;
     color: #29627c;
