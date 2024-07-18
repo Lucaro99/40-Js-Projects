@@ -20,6 +20,7 @@ main {
   justify-content: center;
   text-align: center;
   width: 1080px;
+  height: 100vh;
 }
 .img {
   width: 50%;
@@ -102,12 +103,9 @@ main {
   .descripcion {
     width: 90%;
   }
+
 }
 @media screen and (max-width: 492px) {
-  main{
-    height: auto;
-  }
-
   .counter-big {
     flex-direction: column;
   }
@@ -129,7 +127,6 @@ main {
     margin-right: 10px;
   }
 }
-
 
 /* Botón Back */
 
