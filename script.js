@@ -11,7 +11,10 @@ document.addEventListener('DOMContentLoaded', () => {
         'VideoProject',
         'ScrollProject',
         'Tabs',
-        'Timer'
+        'Timer',
+        'LoremIpsum',
+        'List'
+
         // Añade más carpetas de proyecto aquí
     ];
 
