@@ -26,6 +26,7 @@ margin-bottom: 30px;
 color: green;
 background-color: rgb(189, 238, 189);
 height: 22px;
+display: none;
 p{
   font-size: 15px;
 }
@@ -36,6 +37,7 @@ p{
   color: red;
   background-color: rgb(238, 214, 214);
   height: 22px;
+  display: none;
   p{
     font-size: 15px;
   }
@@ -94,18 +96,33 @@ p{
     transition: all 0.5s ease-in-out;
   }
 }
+.lista-items{
+  width: 55%;
+}
+.item.completed p {
+  text-decoration: line-through;
+  color: gray;
+}
+
+.item.completed .fa-pen-to-square,
+.item.completed .fa-trash-can {
+  color: gray;
+  pointer-events: none; /* Deshabilita la interacción con el botón */
+  cursor: default; /* Cambia el cursor para indicar que está deshabilitado */
+}
 
 .item {
   display: flex;
   align-items: center;
   justify-content: space-between;
   text-align: center;
-  width: 50%;
   height: 25px;
-  margin-top: 20px;
+  margin-top: 10px;
   background-color: rgb(231, 231, 231);
   border-radius: 100px;
-
+  &:hover {
+    background-color: rgb(185, 185, 185);
+  }
   p {
     padding-left: 10px;
     font-size: 15px;
@@ -137,6 +154,8 @@ p{
       transform: scale(1.5);
       transition: transform 0.5s ease-in-out;
     }
+
+    
   }
   .fa-trash-can {
     color: red;

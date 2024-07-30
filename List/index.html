@@ -8,41 +8,25 @@
   </head>
   <body>
     <main class="info">
-      <div class="mensaje">
-        <p>Item Agregado a la lists</p>
+      <div class="mensaje" id="mensaje">
+        <p></p>
       </div>
       <h1>Lista del Super</h1>
       <label for="">
         <input type="text" id="lista" placeholder="¿qué necesitas?" />
-        <button class="guardar">Guardar</button>
+        <button class="guardar" id="guardar">Guardar</button>
       </label>
-
-      <div class="item">
-        <p>1</p>
-        <div class="icon">
-          <i class="fa-regular fa-square-check"></i>
-          <i class="fa-regular fa-pen-to-square"></i>
-          <i class="fa-regular fa-trash-can"></i>
-        </div>
-      </div>
-
+      <div class="lista-items" id="lista-items"></div>
       <div class="clean">
-        <button class="btn-clean">Limpiar Lista</button>
+        <button class="btn-clean" id="limpiar">Limpiar Lista</button>
       </div>
-
-      
-      
-
     </main>
-
     <!-- Botón Back -->
-
     <button class="btn-back" style="position: fixed; left: 20px; bottom: 20px">
       <a href="/index.html">
         <i class="fa-solid fa-arrow-left"></i>
       </a>
     </button>
-
     <!-- Script -->
     <script src="/List/scripts.js"></script>
     <script
